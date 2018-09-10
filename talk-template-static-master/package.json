@@ -1,0 +1,14 @@
+{
+  "name": "talk-template-static",
+  "version": "2.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:ccbabi/talk-template-static.git",
+  "author": "ccbabi <kxxw28@gmail.com>",
+  "license": "MIT",
+  "talk": {
+    "base": ["jquery"]
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

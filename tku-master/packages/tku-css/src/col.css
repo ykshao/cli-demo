@@ -1,0 +1,11 @@
+@import './common/var.css';
+
+.tk-col {
+  float: left;
+  box-sizing: border-box;
+}
+
+@for $i from 1 to 24 {
+  .tk-col--$i { width: calc($i * 100% / 24); }
+  .tk-col--offset-$i { margin-left: calc($i * 100% / 24); }
+}

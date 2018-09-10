@@ -1,0 +1,11 @@
+*.log*
+.cache
+.DS_Store
+.idea
+.vscode
+lib
+node_modules
+docs/dist
+test/coverage
+packages/tku-css/build
+packages/icon/svg

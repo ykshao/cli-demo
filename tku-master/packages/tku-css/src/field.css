@@ -1,0 +1,106 @@
+@import './common/var.css';
+
+.tk-field {
+  .tk-cell__title {
+    max-width: 90px;
+  }
+
+  .tk-cell__value {
+    position: relative;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__control {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    resize: none;
+    display: block;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    &:disabled {
+      opacity: 1;
+      color: $gray-darker;
+      background-color: transparent;
+    }
+
+    &--center {
+      text-align: center;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__clear,
+  &__icon,
+  &__button {
+    flex-shrink: 0;
+  }
+
+  &__clear,
+  &__icon {
+    padding: 0 10px;
+    color: $gray-dark;
+    line-height: inherit;
+    margin-right: -10px;
+  }
+
+  &__icon .tk-icon {
+    display: block;
+    font-size: 16px;
+    line-height: inherit;
+  }
+
+  &__button {
+    padding-left: 10px;
+  }
+
+  &__error-message {
+    color: $red;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  &--disabled {
+    .tk-field__control {
+      color: $gray-dark;
+    }
+  }
+
+  &--error {
+    .tk-field__control {
+      &,
+      &::placeholder {
+        color: $red;
+      }
+    }
+  }
+
+  &--min-height {
+    .tk-field__control {
+      min-height: 60px;
+    }
+  }
+
+  &--label {
+    &-center {
+      .tk-cell__title {
+        text-align: center;
+      }
+    }
+
+    &-right {
+      .tk-cell__title {
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import './common/var.css';
+
+.tk-panel {
+  background: $white;
+
+  &__header {
+    .tk-cell__value {
+      color: $red;
+    }
+  }
+
+  &__footer {
+    padding: 10px 15px;
+  }
+}
